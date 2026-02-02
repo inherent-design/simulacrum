@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/vite-react/tsconfig.json",
+  "display": "Bundle { web, vite, react + swc }",
+  "compilerOptions": {
+    "composite": true
+  },
+  "include": ["src"],
+  "exclude": ["*.tests.ts", "*.mocks.ts", "*.fixtures.ts"]
+}

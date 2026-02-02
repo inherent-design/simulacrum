@@ -1,0 +1,31 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "extends": ["@tsconfig/node24/tsconfig"],
+  "display": "Bundle { node24, tsdown }",
+  "compilerOptions": {
+    "composite": true,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    //
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    //
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    //
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["src"],
+  "exclude": ["*.tests.ts", "*.mocks.ts", "*.fixtures.ts"]
+}
